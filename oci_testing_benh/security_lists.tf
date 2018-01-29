@@ -25,14 +25,11 @@ resource "oci_core_security_list" "ad2pub_seclist" {
   // allow outbound IP traffic
   egress_security_rules {
     destination = "0.0.0.0/0"
-    protocol = "4" // ipv4
   }
 
   // allow inbound IP traffic from Home IP
   ingress_security_rules {
     protocol = "4" // ipv4
-    source = "80.229.19.7/32"
-    stateless = false
   }
 
 }
