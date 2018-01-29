@@ -17,7 +17,7 @@ provider "oci" {
 # Protocols are specified as protocol numbers.
 # http://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
 
-resource "oci_core_security_list" "ad2pub_seclist" {
+resource "oci_core_security_list" "ad3pub_seclist" {
   compartment_id = "${var.compartment_ocid}"
   vcn_id = "${var.vcn_ocid}"
   display_name = "ad3pub"
