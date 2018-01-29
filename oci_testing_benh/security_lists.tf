@@ -20,7 +20,7 @@ provider "oci" {
 resource "oci_core_security_list" "ad2pub_seclist" {
   compartment_id = "${var.compartment_ocid}"
   vcn_id = "${var.vcn_ocid}"
-  display_name = "ad2pub"
+  display_name = "ad3pub"
 
   // allow outbound IP traffic
   egress_security_rules {
